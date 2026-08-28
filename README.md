@@ -7,6 +7,8 @@ metrology app for double-pass collimator benches.
   Windows `.exe`, macOS `.dmg`, Linux binary.
 - The app checks this repository on startup and offers new versions
   automatically.
+- **Manual**: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
+- **Release history**: [CHANGELOG.md](CHANGELOG.md)
 - Bugs & suggestions: use **? → SEND REPORT** inside the app, or write
   to lucas@2olhares.com.
 
