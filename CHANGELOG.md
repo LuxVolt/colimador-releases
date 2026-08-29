@@ -2,6 +2,13 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.4.3 — 2026-08-29
+
+- Zoom now defaults to smooth **5% steps** per wheel/pinch notch (a
+  continuous scroll glides from 1× to 5× in about a second) instead of
+  jumping straight to 5×. The 2× step and the direct-to-MAX behaviour
+  remain available in SETTINGS, and double-tap still toggles 1× ↔ 5×.
+
 ## v5.4.2 — 2026-08-29
 
 - **One-tap silent update**: the update dialog now downloads the new
