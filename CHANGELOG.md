@@ -2,6 +2,30 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.4.2 — 2026-08-29
+
+- **One-tap silent update**: the update dialog now downloads the new
+  version and applies it by itself, then reopens the app — Windows via
+  the new installer, macOS by swapping the app from the `.dmg`, Linux by
+  replacing the binary in place. If automatic update is not possible
+  (offline, `.deb` install, unusual setup) it falls back to opening the
+  download page.
+- **Proper installers**: Windows now ships as
+  `CollimatorVCurve-setup.exe` — install, update or repair by simply
+  running it (per-user, no admin needed). Internally the app is an
+  unpacked folder, which avoids Windows Defender's `Wacatac.B!ml` false
+  positive that hit the v5.4.0 single-file `.exe`. Linux gains a `.deb`
+  package with a menu entry (the raw binary is still published). macOS
+  keeps the drag-to-Applications `.dmg`.
+
+## v5.4.1 — 2026-08-29
+
+- Readable live readout, bench-multimeter style: the graph still runs at
+  video rate, but the numbers now update ~3×/s showing the window
+  average — digits hold still between updates. The big number is now
+  **% of peak** (the natural readout when hunting a maximum); rms, max
+  and the raw value stay as a smaller line with 3 significant digits.
+
 ## v5.4.0 — 2026-08-28
 
 **New**
