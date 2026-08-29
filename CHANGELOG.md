@@ -2,6 +2,12 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.4.4 — 2026-08-29
+
+- Configurable **max zoom**: 5× (default) or 10×, in SETTINGS next to
+  the zoom step. Double-tap and the direct-to-MAX step follow whatever
+  ceiling you pick.
+
 ## v5.4.3 — 2026-08-29
 
 - Zoom now defaults to smooth **5% steps** per wheel/pinch notch (a
