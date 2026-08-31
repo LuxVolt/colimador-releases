@@ -2,6 +2,15 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.5.1 — 2026-08-31
+
+- Fixes the side panel not responding to clicks/taps in v5.5.0 when the
+  capture resolution is larger than the on-screen video (e.g. the new
+  1080p default on a FullHD monitor) — one boundary check was left on
+  the old coordinate space. Found by Martin (mohrlens). If v5.5.0 left
+  you stuck: keyboard shortcuts (space, f, ESC) still worked, and this
+  update restores the panel.
+
 ## v5.5.0 — 2026-08-31
 
 - **Camera resolution is now configurable** in SETTINGS: 720p / **1080p
