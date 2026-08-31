@@ -2,6 +2,21 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.5.0 — 2026-08-31
+
+- **Camera resolution is now configurable** in SETTINGS: 720p / **1080p
+  (new default)** / MAX (up to 4K). The measurement runs on the full
+  chosen resolution — in our synthetic bench study, 1080p roughly
+  doubles vertex precision with long lenses and on the 65 mm master.
+  Changing it clears the current points (different metric scale), and
+  the CSV filename now records the resolution used.
+- **Display decoupled from capture**: the live view scales to your
+  screen (a FullHD/4K monitor automatically shows more real pixels),
+  zoom keeps showing true camera pixels, and a badge at the top right
+  shows the actual resolution and frame rate.
+- Switching cameras now adopts the new camera's real frame size instead
+  of stretching it to the old one.
+
 ## v5.4.5 — 2026-08-31
 
 - Fixes the "everything doubled at startup" glitch seen on some Windows
