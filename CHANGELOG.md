@@ -2,6 +2,23 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.6.0 — 2026-08-31
+
+Auditoria de 31/ago (council + Codex + Codex adversarial + pre-mortem do
+Martin): FIT nao crasha mais (posicoes repetidas, numero infinito, pasta
+read-only, disco cheio); gate de qualidade (vertice fora da varredura ou sem 2 pontos por
+lado = invalido); CSV grava o RESULTADO do fit + versao/camera/ROI e nao se
+sobrescreve; camera que some nao derruba nem congela o app (religa sozinho)
+e resolucao que a camera nao entrega e revertida; camera que muda de
+resolucao sozinha e detectada (badge vermelho, PONTO bloqueado); update:
+download conferido, troca do .app com rollback, fechar a janela nao corrompe
+mais a instalacao, e o update nao interrompe varredura com pontos na
+memoria; piso de 1280 valendo p/ camera pequena (teclado/botoes sempre no
+canvas); leitura %/rms/max visivel tambem no tablet; log persistente em
+~/Documents/colimador/colimador.log + crash log; config.json atomico;
+Documents real no Windows com OneDrive; teclas c/q pedem confirmacao como
+os botoes.
+
 ## v5.5.1 — 2026-08-31
 
 - Fixes the side panel not responding to clicks/taps in v5.5.0 when the
