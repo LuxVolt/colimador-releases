@@ -2,6 +2,19 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.4.5 — 2026-08-31
+
+- Fixes the "everything doubled at startup" glitch seen on some Windows
+  machines (Intel graphics): the window now opens **already maximized**
+  and forces a full repaint, so the compositor can no longer blend the
+  old window surface over the new one — which also made buttons hard to
+  hit.
+- **Single-instance guard**: opening the app twice now shows "already
+  running" briefly and closes the extra copy, instead of stacking two
+  windows on top of each other.
+- The window appears **instantly** with an "opening..." splash while
+  cameras are probed — no more silent seconds inviting a second click.
+
 ## v5.4.4 — 2026-08-29
 
 - Configurable **max zoom**: 5× (default) or 10×, in SETTINGS next to
