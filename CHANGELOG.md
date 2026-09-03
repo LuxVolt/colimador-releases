@@ -2,6 +2,19 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.7.0 — 2026-09-03
+
+Relato do Martin (mohrlens) + council de 02/set: o MAX era envenenado pelo
+arrasto do ROI (cada retangulo intermediario era medido; um sliver sobre a
+barra do reticulo da +194% e ficava como pico ate LIMPAR) - corrigido; MAX e %
+agora nascem da mesma janela de 0,35 s (mediana), entao 100% e alcancavel;
+botao MAX 0 zera o pico sem apagar os pontos; drift de resolucao zera o pico;
+ROI desenhado do centro para fora (toque no alvo e arraste); faixa inferior com
+sparkline menor e % em digitos grandes; DIAG 120 s no "?" (ou tecla d) grava
+CSV com metrica, media/desvio do ROI, gx2/gy2 e exposicao/ganho lidos da camera
+- e o instrumento para separar luz, desfoco e vibracao. Medicao (PONTO/CSV/FIT)
+identica a v5.6.0. Dica: nao cace 100% - 5 pontos nos flancos + FIT.
+
 ## v5.6.0 — 2026-08-31
 
 Auditoria de 31/ago (council + Codex + Codex adversarial + pre-mortem do
