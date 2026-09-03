@@ -2,6 +2,22 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.7.1 — 2026-09-03
+
+Uma pasta so: CSV, fotos, DIAG e o log (agora colimador_log.txt) ficam na
+pasta de saida; config.json passa ao app-data do SO (lido uma vez do lugar
+antigo); Documents real em qualquer idioma; a pasta antiga some se ficar
+vazia. Camera: exposicao travada de verdade (le e reescreve exposure/gain;
+CONFIG AUTO/TRAVADA — o DIAG do Martin provou AE viva), modo de 30 fps
+re-assertado apos escolher MAX (era 15 fps), loop ao vivo mede so o canal
+exibido (mais fps em maquinas fracas), pico sobe mesmo a 12 fps. Tela:
+AUTO-LAYOUT — em telas 16:9 o painel encolhe p/ 180 px (video +7,6%); em
+3:2/16:10 os botoes vao p/ a faixa embaixo e o video toma a largura toda
+(+30%); zoom (- + MAX) e RESET % fora do video; CONFIG em 2 colunas com
+canal, idioma, camera e exposicao (painel fica com PONTO FIT LIMPAR CONFIG
+FOTO). DIAG grava posicao do ROI e fps da camera e zera o pico ao comecar.
+Medicao (PONTO/CSV/FIT) identica. Dica: ajuste o diafragma, RESET %, foque.
+
 ## v5.7.0 — 2026-09-03
 
 Relato do Martin (mohrlens) + council de 02/set: o MAX era envenenado pelo
