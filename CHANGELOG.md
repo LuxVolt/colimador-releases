@@ -2,6 +2,24 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.7.2 — 2026-09-04
+
+Relato de bug com ANEXOS: o botao ENVIAR RELATO agora manda junto o
+colimador_log.txt, a config e o diag_*.csv gravado na sessao, e voce pode
+enviar sem escrever nada - so tocar ENVIAR. A tela mostra numa linha o que
+vai junto. Sem internet, o e-mail de reserva leva as ultimas 30 linhas e o
+caminho dos arquivos p/ anexar a mao. Update: quando falha, o app agora diz
+o que houve (sem internet x GitHub recusou) e grava a causa no log; espera
+10 s em vez de 5; e se a API do GitHub recusar, ele le a versao pela pagina
+de releases, que nao tem limite de pedidos. Camera que cai deixou de
+congelar em silencio: aparece "religando..." sobre a imagem. Botao DESFAZER
+novo (tecla u): tira o ultimo ponto, entao um numero de micrometro digitado
+errado nao obriga mais a LIMPAR e refazer a varredura. O portao de qualidade
+do FIT ficou honesto: ele julga so os pontos que entraram na parabola, entao
+uma varredura de um lado so passa a ser marcada invalida. Trocar resolucao,
+trocar camera ou abrir o DRIVER com a camera caida nao derruba mais o app.
+Medicao (PONTO/CSV/FIT) identica a v5.7.1.
+
 ## v5.7.1 — 2026-09-03
 
 Uma pasta so: CSV, fotos, DIAG e o log (agora colimador_log.txt) ficam na
