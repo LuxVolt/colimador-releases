@@ -2,6 +2,37 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.7.3 — 2026-09-04
+
+Acertos de uso achados na bancada logo depois da v5.7.2. Depois de tocar
+ENVIAR no relato, a tela ficava aberta com so um CANCELAR na frente e parecia
+que nada tinha sido enviado; agora ela vira "RELATO ENVIADO", o "enviado!
+obrigado" aparece grande e verde, o teclado e o ENVIAR somem (nada de mandar
+duas vezes) e fica um botao OK p/ fechar quando voce quiser. Se der erro a
+tela continua como era, porque e nela que mora o botao E-MAIL de reserva.
+O botao do zoom maximo estava sempre escrito MAX, mesmo ja no maximo, entao
+nao dava p/ saber que o proximo toque volta p/ 1x; agora ele mostra o que o
+toque vai fazer: MAX quando esta em 1x, e 1x quando esta ampliado. O idioma
+PADRAO de uma instalacao nova passa a ser ingles (quem ja escolheu segue com
+a escolha). E no CONFIG o botao de trocar de camera dizia CHANGE, igual ao
+botao da pasta; agora diz CAM. Por fim, o ROI passa a LEMBRAR onde
+estava: na bancada o reticulo fica sempre no mesmo lugar, entao o
+retangulo volta no lugar quando voce reabre o app. Se ele nao couber no
+quadro de hoje (voce trocou de camera ou de resolucao), volta ao centro
+em vez de medir fora da imagem.
+
+Camera que cai por mau contato no cabo agora VOLTA sozinha: depois de 3
+tentativas no mesmo lugar o app varre todos os indices, porque o USB
+reenumera e a camera costuma reaparecer noutro. E se voce for no CONFIG
+e tocar na propria camera que caiu, ela reabre de verdade - antes esse
+toque nao fazia nada e a tela ficava preta ate voce fechar e abrir o
+app. O seletor tambem para de mostrar a miniatura velha de uma camera
+que ja morreu. Abertura: a escada de resolucao comeca pela ultima que
+funcionou (em MAX cai de 8 para 4 pedidos, medido), e o log ganha uma
+linha 'abertura:' com o tempo de cada etapa - se ainda demorar, o
+relato agora leva o log e da p/ ver exatamente onde.
+Medicao (PONTO/CSV/FIT) identica.
+
 ## v5.7.2 — 2026-09-04
 
 Relato de bug com ANEXOS: o botao ENVIAR RELATO agora manda junto o
