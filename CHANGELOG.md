@@ -2,6 +2,21 @@
 
 Manual: [Collimator-VCurve-Manual.pdf](Collimator-VCurve-Manual.pdf)
 
+## v5.7.4 — 2026-09-04
+
+Conserta o update no Windows. O app dizia "sem internet" enquanto o navegador
+abria o GitHub na mesma maquina - aconteceu com o Lucas e com o Martin. O log
+do tablet deu a causa: CERTIFICATE_VERIFY_FAILED, "unable to get local issuer
+certificate". Nao era internet nem firewall: o Windows so baixa certificados
+raiz quando alguem pede, e quem pede e o navegador; o Python nao pede. Agora o
+app leva a propria lista de raizes junto (certifi) - a verificacao continua
+LIGADA, so deixou de depender do que a maquina ja tinha guardado. Vale p/ o
+aviso de versao nova, p/ o download da atualizacao e p/ o envio de relato.
+Junto: a mensagem parou de chamar todo problema de rede de "sem internet".
+Agora separa sem internet, algo bloqueando o app, falha de certificado e
+servidor recusou - e mostra o motivo tecnico na propria tela do "?", sem
+precisar abrir o log. Medicao (PONTO/CSV/FIT) identica.
+
 ## v5.7.3 — 2026-09-04
 
 Acertos de uso achados na bancada logo depois da v5.7.2. Depois de tocar
